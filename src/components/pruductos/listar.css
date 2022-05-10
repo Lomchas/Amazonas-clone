@@ -1,0 +1,10 @@
+.container-all-products{
+    width: 100%;
+    padding: 3rem 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}

@@ -1,0 +1,172 @@
+.container-modal{
+    background: rgba(0, 0, 0, 0.55);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.modal-item{
+    background: rgba(255, 255, 255, 0.971);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    z-index: 10000;
+}
+
+.modal-item hr{
+    width: 98%;
+    margin: 0 auto;
+}
+
+.header-car{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem 2rem .5rem;
+}
+
+
+.header-car h2{
+    font-size: calc(.5rem + 1vw);
+}
+
+.header-car h2 span{
+    padding: .3rem;
+    color: white;
+    background: #0c60ae;
+    border-radius: 50px;
+}
+
+.header-car .icon-salir{
+    font-size: calc(.9rem + 1vw);
+    color:rgba(0, 0, 0, 0.55);
+    transition: all .3s;
+}
+
+.header-car .icon-salir:hover{
+    color: black;
+    transform: scale(1.05);
+}
+
+.body-car {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-products{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1rem 0;
+}
+
+.container-products::-webkit-scrollbar {
+    display: none;
+    background-color: rgba(184, 184, 184, 0.59);
+    width: 5px;
+    height: 15px;
+}
+
+.container-products:hover::-webkit-scrollbar {
+    display: initial;
+}
+
+.container-products::-webkit-scrollbar-thumb{
+    background-color: rgb(171, 171, 171);
+    border-radius: 50px;
+}
+
+.body-car .container-noProducts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 75%;
+}
+
+
+.body-car .container-noProducts img{
+    width: 300px;
+}
+
+.body-car .container-noProducts button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 40px;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    background: rgb(218, 171, 41);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.55);
+    transition: all .3s;
+}
+
+.body-car .container-noProducts button:hover{
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.55);
+    background-color: white;
+    color: black;
+    transform: scale(1.08);
+}
+
+.body-car .container-noProducts button:active{
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.55);
+    transform: scale(1.02);
+    color: rgba(0, 0, 0, 0.848);
+    background: rgba(255, 255, 255, 0.848);
+}
+
+.footer-car{
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.footer-car .container-info-purchase{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: .5rem;
+}
+
+.footer-car .container-info-purchase .btn-pagar{
+    width: 40%;
+    padding:.5rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: tomato;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+.footer-car .container-info-purchase .btn-pagar:hover{
+    background: rgba(255, 99, 71, 0.916);
+    color: rgb(0, 0, 0);
+}

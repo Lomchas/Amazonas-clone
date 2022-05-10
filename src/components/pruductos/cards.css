@@ -1,0 +1,81 @@
+.container-card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 300px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.433);
+  padding: 0 0 0.5rem 0;
+}
+
+.container-card .link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+  height: 98%;
+}
+
+.container-image-card {
+  padding: 1rem 1rem 0 1rem;
+  width: 95%;
+}
+
+.container-image-card img {
+  width: 100%;
+  height: 150px;
+}
+
+.container-info-card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.container-info-card .card-name {
+  color: #007185;
+  font-size: calc(0.2rem + 1vw);
+  width: 100%;
+  padding: 0 0.5rem;
+  margin: 0 0 1rem 0;
+}
+
+.container-info-card .price-article {
+  color: #af2913;
+  width: 90%;
+  text-align: left;
+  padding: 0 0.5rem;
+  margin: 0 auto;
+}
+
+.container-actions-btn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  bottom: 0.5rem;
+}
+
+.container-actions-btn .btn-add-car {
+  width: 90%;
+  padding: 0.5rem;
+  color: white;
+  background-color: tomato;
+  border-radius: 5px;
+  border: none;
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+
+.container-actions-btn .btn-add-car:hover {
+  color: black;
+  background: white;
+  border: 1px solid black;
+}
+
+.container-actions-btn .btn-add-car:active {
+  transform: translateY(5px);
+}
