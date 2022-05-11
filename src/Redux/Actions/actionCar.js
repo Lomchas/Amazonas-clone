@@ -36,6 +36,7 @@ export const actionListCarAsync = () => {
             carrito.push({
                 ...doc.data()
             })
+            return console.log('listado actualizado')
         })
         dispatch(actionListCarSync(carrito))
     }

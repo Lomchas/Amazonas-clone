@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import './modalCar.css'
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import ilustration from '../../images/ilustracion-noProducts.png'
@@ -10,8 +10,6 @@ import { actionListAsync } from '../../Redux/Actions/actionArticles';
 const ModalCar = ({ isActive }) => {
     const dispatch = useDispatch()
     const { car } = useSelector(store => store.car)
-
-    const [totalAPagar, setTotalAPagar] = useState(0)
 
     const salirModal = () => {
         isActive(false)
@@ -65,7 +63,7 @@ const ModalCar = ({ isActive }) => {
                 <div className='footer-car'>
                     <div className='container-info-purchase'>
                         <button className='btn-pagar'>Pagar</button>
-                        <p className='total-pay'>Total: <span className='total-a-pagar'>{totalAPagar ? totalAPagar : '0'}</span></p>
+                        <p className='total-pay'>Total: <span className='total-a-pagar'>0</span></p>
                     </div>
                 </div>
             </div>
